@@ -1,0 +1,176 @@
+{
+  "id": "rediseno-de-los-murales-en-la-i-e-j-c-m",
+  "slug": "rediseno-de-los-murales-en-la-i-e-j-c-m",
+  "title": "REDISEÑO DE LOS MURALES EN LA I.E.J.C.M.",
+  "subtitle": "",
+  "date": "2026-10-26",
+  "dateSource": "file",
+  "status": "in_review",
+  "excerpt": "Durante las últimas dos semanas los profesores dieron el trabajo de remodelar las paredes del colegio para pintarlas y por parte de nosotros dejar huella de nuestra existencia el trabajo se hace para poder cambiar y…",
+  "readingMinutes": 2,
+  "wordCount": 325,
+  "cover": {
+    "src": "media-1.jpg",
+    "alt": "Imagen 1 (mural de la paz) sociales",
+    "caption": "Imagen 1 (mural de la paz) sociales",
+    "credit": "Crédito: foto tomada por equipo editorial 11-1",
+    "width": 2048,
+    "height": 924
+  },
+  "blocks": [
+    {
+      "type": "paragraph",
+      "text": "Durante las últimas dos semanas los profesores dieron el trabajo de remodelar las paredes del colegio para pintarlas y por parte de nosotros dejar huella de nuestra existencia el trabajo se hace para poder cambiar y limpiar las paredes qué en la mayoría se encuentran sucias o rayadas con marcador, también para que se vea más limpio y bonito, dejando un mensaje a los demás estudiantes para que no ensucien las paredes."
+    },
+    {
+      "type": "paragraph",
+      "text": "Fomentando un poco el trabajo en grupo y también para saber quien tiene talento para dibujar y otros para que se liberen del estrés que provoca tanto trabajo y más sabiendo que ya estamos a punto de salir."
+    },
+    {
+      "type": "paragraph",
+      "text": "En mi opinión este puede ser el mejor trabajo que podría tener artística para los estudiantes pues pueden tener mejor concentración y libra el estrés."
+    },
+    {
+      "type": "image",
+      "src": "media-1.jpg",
+      "alt": "Imagen 1 (mural de la paz) sociales",
+      "caption": "Imagen 1 (mural de la paz) sociales",
+      "credit": "Crédito: foto tomada por equipo editorial 11-1"
+    },
+    {
+      "type": "paragraph",
+      "text": "Algunas preguntas a los profes encargados de modificar los murales en la institución educativa José celestino mutis:"
+    },
+    {
+      "type": "paragraph",
+      "text": "¿Para qué se están pintando los murales?"
+    },
+    {
+      "type": "paragraph",
+      "text": "Prof: Wilinton. Se pintan como un medio eficaz para que haya convivencia."
+    },
+    {
+      "type": "paragraph",
+      "text": "¿Cuál es el objetivo de estos murales?"
+    },
+    {
+      "type": "paragraph",
+      "text": "Prof: Gladys R. El objetivo es que sean conscientes y puedan vivir en paz y armonía."
+    },
+    {
+      "type": "paragraph",
+      "text": "¿Que enseñansa puede dejar al hacer los murales?"
+    },
+    {
+      "type": "paragraph",
+      "text": "Prof: Willinton. Si respetamos a los demás podemos vivir en paz y mejor resaltando la empatía."
+    },
+    {
+      "type": "paragraph",
+      "text": "¿Qué se puede decir frente al trabajo que hacen los estudiantes con los murales?"
+    },
+    {
+      "type": "paragraph",
+      "text": "Prof: Yuri p. Fomenta la creatividad y el trabajo en equipo, los estudiantes comparten y dejan su huella en la institución educativa y convierten el mural en un especial que trasciende."
+    },
+    {
+      "type": "paragraph",
+      "text": "¿Qué habilidades fomenta este tipo de prácticas como el muralismo?"
+    },
+    {
+      "type": "paragraph",
+      "text": "Prof: Rosendo M. Puede fomentar la visión, la tensión y la curiosidad."
+    },
+    {
+      "type": "paragraph",
+      "text": "¿Qué dificultades se presentan al desarrollar este tipo de actividades?"
+    },
+    {
+      "type": "paragraph",
+      "text": "Prof: Sandra R. La dificultad es el tiempo ya que tienen disponibilidad y talento pero no disponen de todas las clases, y algunos apoyan aunque no tienen talento para ayudar."
+    },
+    {
+      "type": "ai-disclosure",
+      "text": "Este artículo fue elaborado por estudiantes. No se utilizó herramientas de inteligencia artificial para generar este artículo."
+    }
+  ],
+  "sources": [],
+  "media": [
+    {
+      "id": "media-1",
+      "src": "media-1.jpg",
+      "width": 2048,
+      "height": 924,
+      "status": "cover",
+      "reason": "",
+      "watermark": [],
+      "caption": "Imagen 1 (mural de la paz) sociales",
+      "credit": "Crédito: foto tomada por equipo editorial 11-1"
+    }
+  ],
+  "checks": [
+    {
+      "id": "title",
+      "label": "Título",
+      "status": "pass",
+      "detail": "REDISEÑO DE LOS MURALES EN LA I.E.J.C.M."
+    },
+    {
+      "id": "date",
+      "label": "Fecha",
+      "status": "warn",
+      "detail": "2026-10-26"
+    },
+    {
+      "id": "images",
+      "label": "Imágenes",
+      "status": "pass",
+      "detail": "1 de 1 válidas"
+    },
+    {
+      "id": "captions",
+      "label": "Pies de foto",
+      "status": "pass",
+      "detail": "Todas las imágenes usadas tienen pie."
+    },
+    {
+      "id": "credits",
+      "label": "Créditos",
+      "status": "pass",
+      "detail": "Todas las imágenes usadas tienen crédito."
+    },
+    {
+      "id": "sources",
+      "label": "Fuentes",
+      "status": "warn",
+      "detail": "0 fuentes"
+    },
+    {
+      "id": "ai",
+      "label": "Declaración de IA",
+      "status": "pass",
+      "detail": "Declaración encontrada."
+    }
+  ],
+  "warnings": [
+    {
+      "code": "date_inferred",
+      "severity": "warning",
+      "message": "No hay fecha en el documento; se usó la fecha del archivo. Confírmala antes de publicar."
+    },
+    {
+      "code": "sources_missing",
+      "severity": "warning",
+      "message": "No se encontraron fuentes con hipervínculo. Agrega al menos dos."
+    }
+  ],
+  "source": {
+    "filename": "3 REDISEÑO DE LOS MURALES EN LA I.E.J.C.M.docx",
+    "format": "docx",
+    "profile": "docx-structured",
+    "sizeBytes": 362618,
+    "modifiedAt": "2026-10-26T20:19:13.851984+00:00"
+  },
+  "createdAt": "2026-10-27T17:18:04.971426+00:00",
+  "publishedAt": null
+}

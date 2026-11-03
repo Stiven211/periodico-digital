@@ -1,0 +1,73 @@
+{
+  "id": "feria-de-centros-de-interes-y-proyectos-del-aula",
+  "slug": "feria-de-centros-de-interes-y-proyectos-del-aula",
+  "title": "Feria de centros de interés y Proyectos del aula",
+  "subtitle": "",
+  "date": "2026-10-26",
+  "dateSource": "file",
+  "status": "rejected",
+  "excerpt": "Feria de centros de interés y Proyectos del aula Equipo editorial 11-1 En la Institución Educativa José Celestino Mutis el día jueves 01-09-2026 se llevará a cabo la Feria de Centros de Interés y Proyectos de Aula , una ",
+  "readingMinutes": 1,
+  "wordCount": 155,
+  "cover": {
+    "src": "page-1.jpg",
+    "alt": "Primera página de Feria de centros de interés y Proyectos del aula",
+    "caption": "Página 1 del PDF recibido.",
+    "credit": "",
+    "width": 835,
+    "height": 1179
+  },
+  "blocks": [
+    {
+      "type": "image",
+      "src": "page-1.jpg",
+      "alt": "Primera página de Feria de centros de interés y Proyectos del aula",
+      "caption": "Página 1 del PDF recibido.",
+      "credit": ""
+    }
+  ],
+  "sources": [],
+  "media": [
+    {
+      "id": "page-1",
+      "src": "page-1.jpg",
+      "width": 835,
+      "height": 1179,
+      "status": "cover",
+      "reason": "formato PDF no permitido",
+      "watermark": [],
+      "caption": "Página 1 del PDF recibido.",
+      "credit": ""
+    }
+  ],
+  "checks": [
+    {
+      "id": "format",
+      "label": "Formato",
+      "status": "fail",
+      "detail": "PDF no permitido: se requiere DOCX estructurado."
+    },
+    {
+      "id": "pages",
+      "label": "Páginas",
+      "status": "warn",
+      "detail": "2 páginas recibidas como imagen."
+    }
+  ],
+  "warnings": [
+    {
+      "code": "pdf_not_allowed",
+      "severity": "error",
+      "message": "El archivo es un PDF. El periódico solo publica DOCX estructurados: rehazlo con la plantilla."
+    }
+  ],
+  "source": {
+    "filename": "2 Feria de centros de interés y Proyectos del aula -.pdf",
+    "format": "pdf",
+    "profile": "pdf-preview",
+    "sizeBytes": 5528891,
+    "modifiedAt": "2026-10-26T20:18:58.349279+00:00"
+  },
+  "createdAt": "2026-10-27T17:18:02.511080+00:00",
+  "publishedAt": null
+}

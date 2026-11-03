@@ -1,0 +1,176 @@
+{
+  "id": "el-reto-de-ser-estudiante",
+  "slug": "el-reto-de-ser-estudiante",
+  "title": "EL RETO DE SER ESTUDIANTE",
+  "subtitle": "Estrategias prácticas para afrontar el estrés y las exigencias de la vida académica",
+  "date": "2026-10-26",
+  "dateSource": "file",
+  "status": "in_review",
+  "excerpt": "Ser estudiante no consiste solamente en asistir a clases y obtener buenas calificaciones. También significa afrontar tareas, exposiciones, exámenes, expectativas de profesores y familias, comparaciones con otros…",
+  "readingMinutes": 2,
+  "wordCount": 338,
+  "cover": {
+    "src": "media-2.jpg",
+    "alt": "Estudiante frente a una actividad académica.",
+    "caption": "Ilustración 2. Estudiante frente a una actividad académica.",
+    "credit": "Crédito: Generado por Chat GPT",
+    "width": 1320,
+    "height": 858
+  },
+  "blocks": [
+    {
+      "type": "heading",
+      "text": "La presión de ser estudiante"
+    },
+    {
+      "type": "paragraph",
+      "text": "Ser estudiante no consiste solamente en asistir a clases y obtener buenas calificaciones. También significa afrontar tareas, exposiciones, exámenes, expectativas de profesores y familias, comparaciones con otros compañeros y decisiones que pueden marcar el futuro. Para quienes se encuentran en los grados superiores, estas exigencias pueden sentirse aún mayores cuando se acercan las pruebas de Estado, la elección de una carrera o el ingreso a la universidad."
+    },
+    {
+      "type": "paragraph",
+      "text": "Por eso, hablar del estrés académico es importante: no se trata de eliminar todas las responsabilidades, porque forman parte de la vida escolar, sino de aprender a manejarlas de una manera más organizada y equilibrada."
+    },
+    {
+      "type": "heading",
+      "text": "Organizarse también es cuidarse"
+    },
+    {
+      "type": "paragraph",
+      "text": "En la vida real no siempre es posible reducir la cantidad de responsabilidades, pero sí se puede cambiar la manera de enfrentarlas. Organizar el tiempo, establecer prioridades y evitar dejar las tareas para el último momento ayuda a disminuir la sensación de agobio. Tener claro qué debe hacerse primero permite avanzar con mayor tranquilidad y aprovechar mejor el tiempo disponible."
+    },
+    {
+      "type": "paragraph",
+      "text": "También es necesario reconocer que descansar no significa perder el tiempo. Dormir bien, realizar actividad física o dedicar unos minutos a una actividad que genere bienestar permite recuperar energía y mejorar la concentración. El equilibrio entre estudio y descanso puede ayudar a afrontar las obligaciones académicas con una actitud más estable."
+    },
+    {
+      "type": "image",
+      "src": "media-2.jpg",
+      "alt": "Estudiante frente a una actividad académica.",
+      "caption": "Ilustración 2. Estudiante frente a una actividad académica.",
+      "credit": "Crédito: Generado por Chat GPT"
+    },
+    {
+      "type": "heading",
+      "text": "No hay que hacerlo todo a la perfección"
+    },
+    {
+      "type": "paragraph",
+      "text": "Otro aspecto fundamental es entender que no es necesario ser perfecto. Cada estudiante aprende a su propio ritmo y cometer errores forma parte del proceso. Pedir ayuda cuando se necesita, conversar con profesores, familiares o amigos y reconocer los propios límites son acciones que pueden fortalecer la confianza y ayudar a afrontar las dificultades académicas."
+    },
+    {
+      "type": "paragraph",
+      "text": "En conclusión, la presión académica es una realidad para muchos estudiantes, pero no tiene por qué controlar su vida. Aprender a organizarse, cuidar el bienestar físico y emocional y mantener expectativas realistas permite enfrentar los retos escolares con mayor seguridad y equilibrio. El verdadero éxito no consiste únicamente en obtener buenas calificaciones, sino también en desarrollar herramientas para afrontar los desafíos de la vida de una manera saludable y responsible."
+    },
+    {
+      "type": "ai-disclosure",
+      "text": "En este artículo se utilizó Chat GPT únicamente como apoyo para sacar la imagen desde un documento para mejorar el contenido del artículo. Este contenido fue revisado por los integrantes del grupo para asegurar su claridad, coherencia y cumplimiento de las normas del proyecto."
+    }
+  ],
+  "sources": [],
+  "media": [
+    {
+      "id": "media-1",
+      "src": "media-1.jpg",
+      "width": 1320,
+      "height": 824,
+      "status": "rejected",
+      "reason": "marca de agua: unsplash",
+      "watermark": [
+        "unsplash"
+      ],
+      "caption": "Ilustración 1. Estudiante realizando actividades académicas.",
+      "credit": "Credito: Generado por Chat GPT"
+    },
+    {
+      "id": "media-2",
+      "src": "media-2.jpg",
+      "width": 1320,
+      "height": 858,
+      "status": "cover",
+      "reason": "",
+      "watermark": [],
+      "caption": "Ilustración 2. Estudiante frente a una actividad académica.",
+      "credit": "Crédito: Generado por Chat GPT"
+    }
+  ],
+  "checks": [
+    {
+      "id": "title",
+      "label": "Título",
+      "status": "pass",
+      "detail": "EL RETO DE SER ESTUDIANTE"
+    },
+    {
+      "id": "date",
+      "label": "Fecha",
+      "status": "warn",
+      "detail": "2026-10-26"
+    },
+    {
+      "id": "images",
+      "label": "Imágenes",
+      "status": "warn",
+      "detail": "1 de 2 válidas"
+    },
+    {
+      "id": "captions",
+      "label": "Pies de foto",
+      "status": "pass",
+      "detail": "Todas las imágenes usadas tienen pie."
+    },
+    {
+      "id": "credits",
+      "label": "Créditos",
+      "status": "pass",
+      "detail": "Todas las imágenes usadas tienen crédito."
+    },
+    {
+      "id": "sources",
+      "label": "Fuentes",
+      "status": "warn",
+      "detail": "0 fuentes"
+    },
+    {
+      "id": "ai",
+      "label": "Declaración de IA",
+      "status": "pass",
+      "detail": "Declaración encontrada."
+    }
+  ],
+  "warnings": [
+    {
+      "code": "image_rejected",
+      "severity": "error",
+      "message": "media-1: marca de agua: unsplash. Reemplázala antes de publicar."
+    },
+    {
+      "code": "date_inferred",
+      "severity": "warning",
+      "message": "No hay fecha en el documento; se usó la fecha del archivo. Confírmala antes de publicar."
+    },
+    {
+      "code": "sources_missing",
+      "severity": "warning",
+      "message": "No se encontraron fuentes con hipervínculo. Agrega al menos dos."
+    },
+    {
+      "code": "ai_inconsistent",
+      "severity": "warning",
+      "message": "La declaración de IA solo menciona una imagen. Verifica el uso real de IA y los derechos de las imágenes."
+    },
+    {
+      "code": "ai_image_rights",
+      "severity": "warning",
+      "message": "Los créditos indican imágenes generadas con IA. Confirma la herramienta, la autoría y los derechos de uso."
+    }
+  ],
+  "source": {
+    "filename": "1 El reto de ser estudiante.docx",
+    "format": "docx",
+    "profile": "docx-structured",
+    "sizeBytes": 200396,
+    "modifiedAt": "2026-10-26T20:16:57.957406+00:00"
+  },
+  "createdAt": "2026-10-27T17:17:57.655447+00:00",
+  "publishedAt": null
+}

@@ -1,0 +1,12 @@
+{
+  "title": "Periódico Digital · Área de Informática",
+  "description": "Periódico estudiantil de los grados 11-1, 11-2 y 11-3. Noticias, tecnología, cultura y deporte del Área de Informática.",
+  "language": "es",
+  "robots": {
+    "index": true
+  },
+  "accessibility": {
+    "addBypassLinks": false,
+    "ignoreReducedMotion": false
+  }
+}

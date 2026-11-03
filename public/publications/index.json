@@ -1,0 +1,208 @@
+{
+  "folderUrl": "https://drive.google.com/drive/folders/1QxwnwwBwSMhnNNp8DIU97AYSLa0eU2uo",
+  "syncedAt": "2026-10-27T17:18:05.340841+00:00",
+  "files": [
+    {
+      "id": "el-reto-de-ser-estudiante",
+      "name": "1 El reto de ser estudiante.docx",
+      "driveId": "1hkA67P-Ejwj-R-cogltWxfLJXxwBepJt",
+      "driveUrl": "https://drive.google.com/file/d/1hkA67P-Ejwj-R-cogltWxfLJXxwBepJt/view",
+      "kind": "docx",
+      "sizeBytes": 200396,
+      "modifiedAt": "2026-10-26T20:16:57.957406+00:00",
+      "slug": "el-reto-de-ser-estudiante",
+      "status": "blocked",
+      "title": "EL RETO DE SER ESTUDIANTE",
+      "date": "2026-10-26",
+      "dateSource": "file",
+      "excerpt": "Ser estudiante no consiste solamente en asistir a clases y obtener buenas calificaciones. También significa afrontar tareas, exposiciones, exámenes, expectativas de profesores y familias, comparaciones con otros…",
+      "cover": "media-2.jpg",
+      "errorCount": 1,
+      "warningCount": 5,
+      "checks": [
+        {
+          "id": "title",
+          "label": "Título",
+          "status": "pass",
+          "detail": "EL RETO DE SER ESTUDIANTE"
+        },
+        {
+          "id": "date",
+          "label": "Fecha",
+          "status": "warn",
+          "detail": "2026-10-26"
+        },
+        {
+          "id": "images",
+          "label": "Imágenes",
+          "status": "warn",
+          "detail": "1 de 2 válidas"
+        },
+        {
+          "id": "captions",
+          "label": "Pies de foto",
+          "status": "pass",
+          "detail": "Todas las imágenes usadas tienen pie."
+        },
+        {
+          "id": "credits",
+          "label": "Créditos",
+          "status": "pass",
+          "detail": "Todas las imágenes usadas tienen crédito."
+        },
+        {
+          "id": "sources",
+          "label": "Fuentes",
+          "status": "warn",
+          "detail": "0 fuentes"
+        },
+        {
+          "id": "ai",
+          "label": "Declaración de IA",
+          "status": "pass",
+          "detail": "Declaración encontrada."
+        }
+      ],
+      "warnings": [
+        {
+          "code": "image_rejected",
+          "severity": "error",
+          "message": "media-1: marca de agua: unsplash. Reemplázala antes de publicar."
+        },
+        {
+          "code": "date_inferred",
+          "severity": "warning",
+          "message": "No hay fecha en el documento; se usó la fecha del archivo. Confírmala antes de publicar."
+        },
+        {
+          "code": "sources_missing",
+          "severity": "warning",
+          "message": "No se encontraron fuentes con hipervínculo. Agrega al menos dos."
+        },
+        {
+          "code": "ai_inconsistent",
+          "severity": "warning",
+          "message": "La declaración de IA solo menciona una imagen. Verifica el uso real de IA y los derechos de las imágenes."
+        },
+        {
+          "code": "ai_image_rights",
+          "severity": "warning",
+          "message": "Los créditos indican imágenes generadas con IA. Confirma la herramienta, la autoría y los derechos de uso."
+        }
+      ]
+    },
+    {
+      "id": "feria-de-centros-de-interes-y-proyectos-del-aula",
+      "name": "2 Feria de centros de interés y Proyectos del aula -.pdf",
+      "driveId": "1feF7B3nnZfsgVSAXlcSifckb9nrBKh_n",
+      "driveUrl": "https://drive.google.com/file/d/1feF7B3nnZfsgVSAXlcSifckb9nrBKh_n/view",
+      "kind": "pdf",
+      "sizeBytes": 5528891,
+      "modifiedAt": "2026-10-26T20:18:58.349279+00:00",
+      "slug": "feria-de-centros-de-interes-y-proyectos-del-aula",
+      "status": "blocked",
+      "title": "Feria de centros de interés y Proyectos del aula",
+      "date": "2026-10-26",
+      "dateSource": "file",
+      "excerpt": "Feria de centros de interés y Proyectos del aula Equipo editorial 11-1 En la Institución Educativa José Celestino Mutis el día jueves 01-09-2026 se llevará a cabo la Feria de Centros de Interés y Proyectos de Aula , una ",
+      "cover": "page-1.jpg",
+      "errorCount": 1,
+      "warningCount": 1,
+      "checks": [
+        {
+          "id": "format",
+          "label": "Formato",
+          "status": "fail",
+          "detail": "PDF no permitido: se requiere DOCX estructurado."
+        },
+        {
+          "id": "pages",
+          "label": "Páginas",
+          "status": "warn",
+          "detail": "2 páginas recibidas como imagen."
+        }
+      ],
+      "warnings": [
+        {
+          "code": "pdf_not_allowed",
+          "severity": "error",
+          "message": "El archivo es un PDF. El periódico solo publica DOCX estructurados: rehazlo con la plantilla."
+        }
+      ]
+    },
+    {
+      "id": "rediseno-de-los-murales-en-la-i-e-j-c-m",
+      "name": "3 REDISEÑO DE LOS MURALES EN LA I.E.J.C.M.docx",
+      "driveId": "1keixYFVxoKsKhNT280pKi0XMMENNjSvb",
+      "driveUrl": "https://drive.google.com/file/d/1keixYFVxoKsKhNT280pKi0XMMENNjSvb/view",
+      "kind": "docx",
+      "sizeBytes": 362618,
+      "modifiedAt": "2026-10-26T20:19:13.851984+00:00",
+      "slug": "rediseno-de-los-murales-en-la-i-e-j-c-m",
+      "status": "review",
+      "title": "REDISEÑO DE LOS MURALES EN LA I.E.J.C.M.",
+      "date": "2026-10-26",
+      "dateSource": "file",
+      "excerpt": "Durante las últimas dos semanas los profesores dieron el trabajo de remodelar las paredes del colegio para pintarlas y por parte de nosotros dejar huella de nuestra existencia el trabajo se hace para poder cambiar y…",
+      "cover": "media-1.jpg",
+      "errorCount": 0,
+      "warningCount": 2,
+      "checks": [
+        {
+          "id": "title",
+          "label": "Título",
+          "status": "pass",
+          "detail": "REDISEÑO DE LOS MURALES EN LA I.E.J.C.M."
+        },
+        {
+          "id": "date",
+          "label": "Fecha",
+          "status": "warn",
+          "detail": "2026-10-26"
+        },
+        {
+          "id": "images",
+          "label": "Imágenes",
+          "status": "pass",
+          "detail": "1 de 1 válidas"
+        },
+        {
+          "id": "captions",
+          "label": "Pies de foto",
+          "status": "pass",
+          "detail": "Todas las imágenes usadas tienen pie."
+        },
+        {
+          "id": "credits",
+          "label": "Créditos",
+          "status": "pass",
+          "detail": "Todas las imágenes usadas tienen crédito."
+        },
+        {
+          "id": "sources",
+          "label": "Fuentes",
+          "status": "warn",
+          "detail": "0 fuentes"
+        },
+        {
+          "id": "ai",
+          "label": "Declaración de IA",
+          "status": "pass",
+          "detail": "Declaración encontrada."
+        }
+      ],
+      "warnings": [
+        {
+          "code": "date_inferred",
+          "severity": "warning",
+          "message": "No hay fecha en el documento; se usó la fecha del archivo. Confírmala antes de publicar."
+        },
+        {
+          "code": "sources_missing",
+          "severity": "warning",
+          "message": "No se encontraron fuentes con hipervínculo. Agrega al menos dos."
+        }
+      ]
+    }
+  ]
+}
