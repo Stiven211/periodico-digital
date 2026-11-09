@@ -43,6 +43,15 @@ export function useAuthSession() {
   return { session, loading };
 }
 
+function isNetworkError(message: string) {
+  return /failed to fetch|network|load failed|name_not_resolved|err_name/i.test(
+    message,
+  );
+}
+
+const networkMessage =
+  "No se pudo conectar con Supabase. Verifica que el proyecto esté activo y que la URL sea correcta.";
+
 export async function signIn(email: string, password: string): Promise<LoginResult> {
   if (!supabase) {
     if (email === "demo@gmail.com" && password === "123456789") {
@@ -54,24 +63,35 @@ export async function signIn(email: string, password: string): Promise<LoginResu
     };
   }
 
-  const { error } = await supabase.auth.signInWithPassword({ email, password });
-  if (error) {
-    if (error.message.toLowerCase().includes("email not confirmed")) {
-      return {
-        ok: false,
-        message: "La cuenta existe pero el correo no está confirmado. Revisa tu bandeja.",
-      };
+  try {
+    const { error } = await supabase.auth.signInWithPassword({ email, password });
+    if (error) {
+      if (isNetworkError(error.message)) {
+        return { ok: false, message: networkMessage };
+      }
+      if (error.message.toLowerCase().includes("email not confirmed")) {
+        return {
+          ok: false,
+          message: "La cuenta existe pero el correo no está confirmado. Revisa tu bandeja.",
+        };
+      }
+      if (error.message.toLowerCase().includes("invalid login credentials")) {
+        return {
+          ok: false,
+          message: "Correo o contraseña incorrectos. Usa la cuenta creada en Supabase.",
+        };
+      }
+      return { ok: false, message: error.message };
     }
-    if (error.message.toLowerCase().includes("invalid login credentials")) {
-      return {
-        ok: false,
-        message: "Correo o contraseña incorrectos. Usa la cuenta creada en Supabase.",
-      };
-    }
-    return { ok: false, message: error.message };
-  }
 
-  return { ok: true };
+    return { ok: true };
+  } catch (error) {
+    const message = error instanceof Error ? error.message : String(error);
+    return {
+      ok: false,
+      message: isNetworkError(message) ? networkMessage : message,
+    };
+  }
 }
 
 export async function signOut() {

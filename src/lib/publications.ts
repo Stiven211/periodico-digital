@@ -66,6 +66,9 @@ function errorText(error: unknown) {
 
 export function publishingErrorMessage(error: unknown) {
   const message = errorText(error);
+  if (/failed to fetch|network|load failed|name_not_resolved|err_name/i.test(message)) {
+    return "No se pudo conectar con Supabase. Verifica que el proyecto esté activo y que la URL sea correcta.";
+  }
   if (/row-level security/i.test(message)) {
     return "Tu cuenta no tiene permisos de docente. Agrega su correo a la tabla teacher_emails en Supabase.";
   }
