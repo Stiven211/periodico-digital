@@ -54,12 +54,10 @@ const networkMessage =
 
 export async function signIn(email: string, password: string): Promise<LoginResult> {
   if (!supabase) {
-    if (email === "demo@gmail.com" && password === "123456789") {
-      return { ok: true };
-    }
     return {
       ok: false,
-      message: "Credenciales incorrectas. Verifica tu correo y contraseña.",
+      message:
+        "Supabase no está configurado. Revisa VITE_SUPABASE_URL y VITE_SUPABASE_PUBLISHABLE_KEY.",
     };
   }
 

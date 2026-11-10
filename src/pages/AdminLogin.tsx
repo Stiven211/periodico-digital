@@ -67,10 +67,9 @@ export default function AdminLogin({ onLogin, navigate }: AdminLoginProps) {
                 Acceso con la cuenta del docente creada en Supabase.
               </p>
             ) : (
-              <p className="text-xs text-slate-400 text-center">
-                <span className="text-blue-400 font-medium">Demo:</span>{' '}
-                <span className="font-mono-code">demo@gmail.com</span> /{' '}
-                <span className="font-mono-code">123456789</span>
+              <p className="text-xs text-red-400 text-center">
+                Supabase no está configurado. Revisa las variables de entorno
+                del despliegue.
               </p>
             )}
           </div>

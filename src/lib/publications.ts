@@ -12,41 +12,14 @@ export function publicationMedia(slug: string, src: string) {
 
 type PublishedMap = Record<string, string>;
 
-const STORAGE_KEY = "periodico.publication-overrides.v1";
-const CHANGE_EVENT = "periodico:publications";
+const supabaseConfigMessage =
+  "Supabase no está configurado. Revisa VITE_SUPABASE_URL y VITE_SUPABASE_PUBLISHABLE_KEY.";
 
-function loadLocalPublished(): PublishedMap {
-  try {
-    const raw = window.localStorage.getItem(STORAGE_KEY);
-    if (!raw) {
-      return {};
-    }
-    const parsed = JSON.parse(raw) as PublishedMap;
-    return parsed && typeof parsed === "object" ? parsed : {};
-  } catch {
-    return {};
+function requireSupabase() {
+  if (!supabase) {
+    throw new Error(supabaseConfigMessage);
   }
-}
-
-function persistLocalPublished(published: PublishedMap) {
-  try {
-    window.localStorage.setItem(STORAGE_KEY, JSON.stringify(published));
-  } catch {
-    return;
-  }
-  window.dispatchEvent(new Event(CHANGE_EVENT));
-}
-
-function publishLocally(slug: string) {
-  const published = loadLocalPublished();
-  published[slug] = new Date().toISOString();
-  persistLocalPublished(published);
-}
-
-function unpublishLocally(slug: string) {
-  const published = loadLocalPublished();
-  delete published[slug];
-  persistLocalPublished(published);
+  return supabase;
 }
 
 function errorText(error: unknown) {
@@ -82,11 +55,9 @@ export function publishingErrorMessage(error: unknown) {
 }
 
 async function fetchSupabasePublished(): Promise<PublishedMap> {
-  if (!supabase) {
-    return loadLocalPublished();
-  }
+  const client = requireSupabase();
 
-  const { data, error } = await supabase
+  const { data, error } = await client
     .from("published_articles")
     .select("slug, published_at")
     .order("published_at", { ascending: false });
@@ -101,12 +72,9 @@ async function fetchSupabasePublished(): Promise<PublishedMap> {
 }
 
 export async function publishArticle(slug: string) {
-  if (!supabase) {
-    publishLocally(slug);
-    return;
-  }
+  const client = requireSupabase();
 
-  const { error } = await supabase
+  const { error } = await client
     .from("published_articles")
     .upsert(
       { slug, published_at: new Date().toISOString() },
@@ -119,12 +87,9 @@ export async function publishArticle(slug: string) {
 }
 
 export async function unpublishArticle(slug: string) {
-  if (!supabase) {
-    unpublishLocally(slug);
-    return;
-  }
+  const client = requireSupabase();
 
-  const { error } = await supabase
+  const { error } = await client
     .from("published_articles")
     .delete()
     .eq("slug", slug);
@@ -135,9 +100,7 @@ export async function unpublishArticle(slug: string) {
 }
 
 export function usePublishedArticles() {
-  const [published, setPublished] = useState<PublishedMap>(() =>
-    supabase ? {} : loadLocalPublished(),
-  );
+  const [published, setPublished] = useState<PublishedMap>({});
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
 
@@ -148,7 +111,7 @@ export function usePublishedArticles() {
       setError(null);
     } catch (err) {
       setError(publishingErrorMessage(err));
-      setPublished(supabase ? {} : loadLocalPublished());
+      setPublished({});
     } finally {
       setLoading(false);
     }
@@ -159,21 +122,11 @@ export function usePublishedArticles() {
   }, [reload]);
 
   useEffect(() => {
-    const syncLocal = () => {
-      if (!supabase) {
-        setPublished(loadLocalPublished());
-      }
-    };
     const refresh = () => {
       void reload();
     };
-
-    window.addEventListener("storage", syncLocal);
-    window.addEventListener(CHANGE_EVENT, syncLocal);
     window.addEventListener("focus", refresh);
     return () => {
-      window.removeEventListener("storage", syncLocal);
-      window.removeEventListener(CHANGE_EVENT, syncLocal);
       window.removeEventListener("focus", refresh);
     };
   }, [reload]);

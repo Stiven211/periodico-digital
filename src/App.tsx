@@ -2,7 +2,6 @@ import { useState } from "react"
 import Header from "./components/Header"
 import { signIn, signOut, useAuthSession } from "./lib/auth"
 import type { LoginResult } from "./lib/auth"
-import { isSupabaseConfigured } from "./lib/supabase"
 import Footer from "./components/Footer"
 import Home from "./pages/Home"
 import CategoryPage from "./pages/CategoryPage"
@@ -23,11 +22,8 @@ export type NavState =
 
 export default function App() {
   const [nav, setNav] = useState<NavState>({ page: "home" })
-  const [demoAuthenticated, setDemoAuthenticated] = useState(false)
   const { session } = useAuthSession()
-  const isAuthenticated = isSupabaseConfigured
-    ? Boolean(session)
-    : demoAuthenticated
+  const isAuthenticated = Boolean(session)
 
   const navigate = (state: NavState) => {
     if (state.page === "admin" && !isAuthenticated) {
@@ -44,9 +40,6 @@ export default function App() {
   ): Promise<LoginResult> => {
     const result = await signIn(email, password)
     if (result.ok) {
-      if (!isSupabaseConfigured) {
-        setDemoAuthenticated(true)
-      }
       setNav({ page: "admin", section: "dashboard" })
     }
     return result
@@ -54,7 +47,6 @@ export default function App() {
 
   const handleLogout = async () => {
     await signOut()
-    setDemoAuthenticated(false)
     setNav({ page: "home" })
   }
 
